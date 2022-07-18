@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLORE FLEXBOX</title>
+    <style>
+        .container1 {
+            border: 3px dotted mediumspringgreen;
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* align-items: flex-end; */
+            align-items: center;
+            margin-bottom: 10em;
+            height: 300px;
+            flex-direction: row-reverse;
+
+        }
+
+        .container2 {
+            border: 3px dotted mediumspringgreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column-reverse;
+            height: 600px;
+            margin-bottom: 5em;
+
+        }
+
+        .container3 {
+            border: 3px dotted mediumspringgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 500px;
+            margin-bottom: 5em;
+        }
+
+        .container4 {
+            border: 3px dotted mediumspringgreen;
+            align-items: stretch;
+            display: flex;
+            height: 400px;
+        }
+
+        .box {
+            border: 3px dashed purple;
+            width: 100px;
+            height: 100px;
+            font-size: 1.5em;
+            font-weight: bolds;
+        }
+
+        .box1 {
+            border: 3px dashed purple;
+            width: 100px;
+            /* height: 100px; */
+            font-size: 1.5em;
+            font-weight: bolds;
+        }
+
+        #fix-box {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .contsiner>.box{Box-$}*3 -->
+    <div class="container1">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+
+    </div>
+
+    <div class="container2">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+
+    </div>
+
+    <div class="container3">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-31</div>
+        <div class="box">Box-32</div>
+
+    </div>
+
+    <div class="container4">
+        <div class="box1">Box-1</div>
+        <div id="fix-box" class="box1">Box-2</div>
+
+    </div>
+
+</body>
+
+</html>
